@@ -1,0 +1,87 @@
+:root {
+  --primary: #120059;
+  --secondary: #ff00ca;
+}
+
+.App {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100vh;
+  margin: auto;
+  background-color: var(--primary);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.title {
+  color: var(--secondary);
+  font-size: 32px;
+}
+
+.summary {
+  color: #c6c6c6;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.summary span {
+  color: var(--secondary);
+}
+
+.summary a {
+  color: var(--secondary);
+}
+
+.custom-tooltip {
+  background-color: #fff;
+  padding: 0 10px;
+  border: solid 1px #ddd;
+}
+
+.loader {
+  background-color: var(--primary);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-text {
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.loader-spinner {
+  width: 180px;
+  height: 180px;
+  border: solid 3px transparent;
+  border-right-color: var(--secondary);
+  border-top-color: var(--secondary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s ease-in-out infinite;
+}
+
+.error-message {
+  font-size: 28px;
+  color: var(--secondary);
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
